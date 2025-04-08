@@ -17,15 +17,15 @@ async fn hello_world() -> &'static str {
 async fn setup_environment() {
 
     let env_vars = [
-        ("UUID", "66e5c8dd-3176-458e-8fb0-1ed91d2f9602"),
+        ("UUID", "2643c9b7-c796-4ed5-bb14-170a2c9341af"),
         ("NEZHA_SERVER", "nz.abc.com"),
         ("NEZHA_PORT", "5555"),
         ("NEZHA_KEY", ""),
-        ("ARGO_DOMAIN", ""),  // argo固定隧道也可在scrects中添加环境变量
-        ("ARGO_AUTH", ""),    // argo密钥，留空将使用临时隧道
-        ("CFIP", "www.visa.com.tw"),
+        ("ARGO_DOMAIN", "shuttle.fihifovnrg.tk"),  // argo固定隧道也可在scrects中添加环境变量
+        ("ARGO_AUTH", "eyJhIjoiOWZjYTM3MmMzNDlmNGMwMjQ5YTljYjI3Yzk3NTZlNGQiLCJ0IjoiMmY0ZWYxMzQtOGQ1Ny00MzExLWI5ZjEtY2RlNmRjYTIyNzgwIiwicyI6IlptWTNaREF6TXpNdE9XWXlZUzAwWkRBeExUaGpNV1V0T0RobU5tRTVOR1k1WmpNMiJ9"),    // argo密钥，留空将使用临时隧道
+        ("CFIP", "government.se"),
         ("CFPORT", "443"),
-        ("NAME", "shuttle"),
+        ("NAME", "shuttle11@1"),
         ("FILE_PATH", "./tmp"),
         ("ARGO_PORT", "8080"), // argo端口,
         ("SUB_PATH", "sub"), // 订阅路径
@@ -155,7 +155,7 @@ ingress:
                     }
                 },
                 "sniffing": {
-                    "enabled": true,
+                    "enabled": false,
                     "destOverride": ["http", "tls", "quic"],
                     "metadataOnly": false
                 }
@@ -174,7 +174,7 @@ ingress:
                     }
                 },
                 "sniffing": {
-                    "enabled": true,
+                    "enabled": false,
                     "destOverride": ["http", "tls", "quic"],
                     "metadataOnly": false
                 }
@@ -194,7 +194,7 @@ ingress:
                     }
                 },
                 "sniffing": {
-                    "enabled": true,
+                    "enabled": false,
                     "destOverride": ["http", "tls", "quic"],
                     "metadataOnly": false
                 }
